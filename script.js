@@ -94,4 +94,3 @@ play();
 function setColour(hexString) {
   colour = hexString;
 }
-
