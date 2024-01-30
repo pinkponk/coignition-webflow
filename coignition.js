@@ -86,7 +86,7 @@ async function play() {
   for (var i = 0; i < frames; i++) {
     document.getElementById("output").innerHTML =
       '<font color="' + colour + '"><pre>' + n[i] + "</font></pre>";
-    await new Promise((r) => setTimeout(r, 80));
+    await new Promise((r) => setTimeout(r, 120));
   }
   play();
 }
