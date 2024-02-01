@@ -14,20 +14,27 @@
             /* Dont take up more space than necessary */
             /* background color is black    */
             background-color: black;
-            font-size: 2.5em;
-
-
+            font-size: 1.5em;
+            /* center the text in the cells */
 
         }
 
-        .ascii-cell {}
+        #asciiArtCanvas {
+            background-color: black;
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
-    <div id="asciiArtGrid"></div>
+    <!-- <div id="asciiArtGrid"></div> -->
     <!-- <script src="coignition.js"></script> add type module-->
-    <script type="module" src="coignition.js"></script>
+    <!-- <script type="module" src="coignition.js"></script> -->
+
+    <canvas id="asciiArtCanvas"></canvas>
+    <script type="module" src="coignition_canvas.js"></script>
+
+
 
 </body>
 

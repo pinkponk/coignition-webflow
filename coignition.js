@@ -1,9 +1,7 @@
-// import output.js file which includes the ascii art.
 
+
+// Use this when developing 
 import { colors, frames } from './output.js';
-
-// Need to add export to the output.js file
-// export { colors, frames };
 
 var asciiArtGrid = document.getElementById('asciiArtGrid');
 
@@ -14,10 +12,6 @@ function initializeGrid(width, height) {
         cell.classList.add('ascii-cell');
         asciiArtGrid.appendChild(cell);
     }
-}
-
-function getColorStyle(rgb) {
-    return 'rgb(' + rgb.join(',') + ')';
 }
 
 function animateAsciiArt(frameInterval) {
