@@ -28,6 +28,7 @@ function animateAsciiArt(frameInterval) {
 }
 
 
+
 // Function to update the grid
 function updateAsciiArt(asciiFrame, colorFrame) {
     let cells = asciiArtGrid.getElementsByClassName('ascii-cell');
