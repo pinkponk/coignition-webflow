@@ -64,7 +64,8 @@ def convert_shell_script_to_js(shell_script_path, js_output_path):
 
     frames = re.split(r'sleep 0\.033\s*\n', content)
     parsed_frames = []
-    for frame in frames:
+    for frame_1 in range(0, len(frames), 2):
+        frame = frames[frame_1]
         char_frame, color_frame = parse_frame(frame)
         # Check if there is any non-empty line in the frame
         if any(line.strip() for line in char_frame):
@@ -93,4 +94,4 @@ def convert_shell_script_to_js(shell_script_path, js_output_path):
 
 
 # Example usage
-convert_shell_script_to_js('hej8.sh', 'output.js')
+convert_shell_script_to_js('aikollega.sh', 'output_kollega.js')
